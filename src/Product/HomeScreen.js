@@ -34,7 +34,6 @@ function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={{ flexDirection: "row", justifyContent: "space-evenly" }}>
-
         <Text style={{ color: "red", fontSize: 20, textAlign: 'center', paddingBottom: 20 }}>
           User Name: {userName}
         </Text>
@@ -84,9 +83,9 @@ function HomeScreen({ navigation }) {
     storeData(CART_DATA, JSON.stringify(cartData));
   }
 
-  
+
   function goToCart() {
-    if(cartData.length == 0) {
+    if (cartData.length == 0) {
       alert("Cart is empty");
       return;
     }
